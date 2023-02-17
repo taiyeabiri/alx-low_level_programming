@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include <unistd.h>
 /**
- * main - Program that prints a line to the standard error
- * Return: 1 (Success)
+ * main - prints to string
+ * Description: Prints "and that piece of art..." without puts
+ * Return: 1
  */
-int main (void)
+int main(void)
 {
-fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+char s[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+fprintf(stderr, "%s", s);
 return (1);
 }
